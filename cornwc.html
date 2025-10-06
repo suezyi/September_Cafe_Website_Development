@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corn WholeCake</title>
+    <link rel="stylesheet" href="cakestyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo_september_cafe.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav id="nav-cell">
+            <a href="index.html"><div class="logo"></div></a>
+            <div class="navlinks">
+                <a href="index.html">Home</a>
+                <a href="abtus.html">About Us</a>
+                <div class="dropdown">
+                    <a>Category</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item parent">
+                            <a href="cake.html">Cake</a>
+                            <div class="child">
+                                <a href="cake.html">Slice Cake</a>
+                                <a href="wholecake.html">Whole Cake</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item parent">
+                            <a href="cupcakes.html">Dessert</a>
+                            <div class="child">
+                                <a href="cupcakes.html">Cupcake</a>
+                                <a href="yoghurtbowl.html">Yoghurt Bowl</a>
+                                <a href="mousse.html">Mousse</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item parent">
+                            <a href="tea.html">Drinks</a>
+                            <div class="child">
+                                <a href="tea.html">Tea</a>
+                                <a href="coffee.html">Coffee</a>
+                                <a href="Beverages.html">Beverages</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="deliverypickup.html">Delivery & PickUp</a>
+                <a href="review.html">Review</a>
+                <div class="dropdown">
+                    <a href="signup.html"><img src="user.png" width="38"></a>
+                        <div class="dropdown-content">
+                            <a href="Signup.html">Sign up</a>
+                            <a href="Login.html">Log in</a>
+                        </div>
+                </div>
+                <a href="cafecart.html"><img src="trolly.png" width="45"></a>
+           
+            <a></a>
+                
+            </div>
+        </nav>
+    </header>
+</head>
+
+    <div class="container">
+        <div class="cake-image">
+            <img src="cornwc.jpg" alt="Corn Whole Cake">
+        </div>
+        <div class="cake-details">
+            <h1><b>Corn WholeCake</b></h1>
+      
+            
+            <p class="description">
+                Discover the wholesome goodness of our Corn Cake, a delightful treat that brings the golden sweetness of corn to your table. 
+                This 6-inch premium cake features layers of tender corn-infused sponge and a creamy corn custard filling, offering a unique and satisfying flavor with every bite.<br><br>
+                Beautifully adorned with fresh corn kernels and a light dusting of powdered sugar, our Whole Corn Cake is a visual and culinary delight.
+                Perfect for any occasion, it's a heartwarming choice that captures the essence of rustic charm and modern elegance.
+                <br><br>Whether celebrating a special event or simply indulging yourself, our Corn WholeCake is a sweet choice.
+                                                
+            </p>
+            <p class="delivery">Includes a standard candle and knife for added convenience and celebration.<br> Same Day Delivery PJ</p>
+           
+            <div class="price">RM450.00</div>
+            <p>Quantity</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" max="20" oninput="validateInput(this)">
+                <button>+</button>
+            </div>
+            <div class="actions">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;2024 September Café. All Rights Reserved.</p>
+    </footer>
+    <script src="cafe.js"></script>
+    <script src="input.js"></script>
+</body>
+</html>

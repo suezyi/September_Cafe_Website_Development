@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="pickup.css">
+        
+        <title>Pickup Details</title>
+        <link rel="icon" href="logo_september_cafe.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+
+   
+    </head>
+
+    <body>
+        <header>
+            <nav id="nav-cell">
+                <a href="index.html"><div class="logo"></div></a>
+                <div class="navlinks">
+                    <a href="index.html">Home</a>
+                    <a href="abtus.html">About Us</a>
+                    <div class="dropdown">
+                        <a>Category</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item parent">
+                                <a href="cake.html">Cake</a>
+                                <div class="child">
+                                    <a href="cake.html">Slice Cake</a>
+                                    <a href="wholecake.html">Whole Cake</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item parent">
+                                <a href="cupcakes.html">Dessert</a>
+                                <div class="child">
+                                    <a href="cupcakes.html">Cupcake</a>
+                                    <a href="yoghurtbowl.html">Yoghurt Bowl</a>
+                                    <a href="mousse.html">Mousse</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item parent">
+                                <a href="tea.html">Drinks</a>
+                                <div class="child">
+                                    <a href="tea.html">Tea</a>
+                                    <a href="coffee.html">Coffee</a>
+                                    <a href="Beverages.html">Beverages</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="deliverypickup.html">Delivery & PickUp</a>
+                    <a href="review.html">Review</a>
+                    <div class="dropdown">
+                        <a href="signup.html"><img src="user.png" width="38"></a>
+                            <div class="dropdown-content">
+                                <a href="Signup.html">Sign up</a>
+                                <a href="Login.html">Log in</a>
+                            </div>
+                    </div>
+                    <a href="cafecart.html"><img src="trolly.png" width="45"></a>
+               
+                <a></a>
+                    
+                </div>
+            </nav>
+        </header>
+        
+            <br><br><br><br>
+        <div class="form-container" id="formContainer">
+            <form id="pForm" onsubmit="return submitForm()">
+                <h2 style="text-align:center">Pickup Details</h2>
+                <div class="form-group">
+                    <label for="name">First Name:</label>
+                    <input type="text"id="fname" name="fname"required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="name">Last Name:</label>
+                    <input type="text"id="lname" name="lname"required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="time">Pickup Time:</label>
+                    <select id="time" name="time" required>
+                        <option value="">Select..</option>
+                        <option value="1">10:00-11:00</option>
+                        <option value="2">11:00-12:00</option>
+                        <option value="3">12:00-13:00</option>
+                        <option value="4">13:00-14:00</option>
+                        <option value="5">14:00-15:00</option>
+                        <option value="6">15:00-16:00</option>
+                        <option value="7">16:00-17:00</option>
+                        <option value="8">17:00-18:00</option>
+                        <option value="9">18:00-19:00</option>
+                    </select>
+               </div>
+        
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="phone" id="phone" name="phone" required pattern="\d{10}">
+                </div>
+        
+               <div class="form-group">
+                <button type="submit" name="submitted" value="true" onclick="submitForm()">Submit</button>
+               </div>
+            </form>
+            
+            
+            
+        </div>
+        <br>
+        <div class="footerlast">&copy;2024 September Café. All Rights Reserved.</div> 
+        <script src="pickup.js"> 
+        </script>
+        <script src="cafe.js"></script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+body{
+   padding-left:30px;
+   padding-right:30px;
+   padding-bottom:30px;
+}
+.form-container{
+    background-color: #fcf8dc;
+    color: #85733b;
+    border: 1px solid #85733b;
+    border-radius: 10px ;
+    max-width: 500px;
+    max-height: max-content;
+    margin: 0 auto;
+    padding: 20px;
+   
+ }
+ 
+ .form-container h1{
+    text-align: center;
+ }
+ 
+ .form-group{
+    margin-bottom: 15px;
+ }
+ 
+ .form-group label{
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+ }
+ 
+ .form-group input,  .form-group textarea {
+    width: 96%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+ }
+ .form-group select{
+    width: 99%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+ }
+ 
+ .form-group textarea {
+    resize:  vertical;
+ }
+ 
+ .form-group button {
+    width: 99%;
+    padding: 10px;
+    background-color: #ecdd86;            
+    font-family: "Playfair Display", serif;
+    color: #85733b;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+ 
+ .form-group button:hover{
+    background-color: #85733b;
+    color: #fcf8dc;
+    font-family: "Playfair Display", serif;
+ }
+ 
+        
+        .success-message{
+            display:none;
+            text-align:center;
+            color:#85733b;
+            font-size:20px;
+            margin-top:20px;
+        }
+ 
+        .submitted .success-message{
+            display:block;
+        }
+ 
+        .submitted form{
+            display:none;
+        }

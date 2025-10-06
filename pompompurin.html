@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Product Page</title>
+    <link rel="stylesheet" href="ybstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo_september_cafe.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav id="nav-cell">
+            <a href="index.html"><div class="logo"></div></a>
+            <div class="navlinks">
+                <a href="index.html">Home</a>
+                <a href="abtus.html">About Us</a>
+                <div class="dropdown">
+                    <a>Category</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item parent">
+                            <a href="cake.html">Cake</a>
+                            <div class="child">
+                                <a href="cake.html">Slice Cake</a>
+                                <a href="wholecake.html">Whole Cake</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item parent">
+                            <a href="cupcakes.html">Dessert</a>
+                            <div class="child">
+                                <a href="cupcakes.html">Cupcake</a>
+                                <a href="yoghurtbowl.html">Yoghurt Bowl</a>
+                                <a href="mousse.html">Mousse</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item parent">
+                            <a href="tea.html">Drinks</a>
+                            <div class="child">
+                                <a href="tea.html">Tea</a>
+                                <a href="coffee.html">Coffee</a>
+                                <a href="Beverages.html">Beverages</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="deliverypickup.html">Delivery & PickUp</a>
+                <a href="review.html">Review</a>
+                <div class="dropdown">
+                    <a href="signup.html"><img src="user.png" width="38"></a>
+                        <div class="dropdown-content">
+                            <a href="Signup.html">Sign up</a>
+                            <a href="Login.html">Log in</a>
+                        </div>
+                </div>
+                <a href="cafecart.html"><img src="trolly.png" width="45"></a>
+           
+            <a></a>
+                
+            </div>
+        </nav>
+    </header>
+</head>
+
+    <div class="container">
+        <div class="cake-image">
+            <img src="pudding yogurtbowl.jpg" alt="Pompompurin Yoghurt Bowl">
+        </div>
+        <div class="cake-details">
+            <h1><b>Pompompurin Yoghurt Bowl</b></h1>
+      
+            
+            <p class="description">
+                <b>"Persimmon Pepper Bear and Pudding Dog Yogurt Bowl"</b><br><br>
+                Featuring chocolate yogurt balls, pumpkin yogurt balls, mulberry blueberries, and chocolate flakes.
+                
+                
+            </p>
+            <p class="delivery">Includes an ice pack to ensure our cutie yoghurt bowl arrives your home safely !<br> Same Day Delivery PJ</p>
+           
+            <div class="price">RM16.00</div>
+            <p>Quantity</p>
+            <div class="quantity">
+                <button>-</button>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" max="20" oninput="validateInput(this)">
+                <button>+</button>
+            </div>
+            <div class="actions">
+                <button class="buy-now">Buy Now</button>
+                <button class="add-to-cart">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="footerlast">&copy;2024 September Café. All Rights Reserved.</div> 
+    <script src="cafe.js"></script>
+    <script src="input.js"></script>
+</body>
+</html>
