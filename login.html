@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Log In</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="signuploginstyle.css">
+<link rel="icon" href="logo_september_cafe.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header style="padding-bottom: 10px;">
+       
+            <a href="index.html"><img src="logo_september_cafe.png" height="140" alt="cafe_logo"></a>
+       
+    </header>
+    <div>
+    <div class="form-container" id="formContainer">
+    <h1>Log In</h1>
+    <form id="logInForm" method="get" onsubmit="return showLoginMessage()">
+        <div class="form-group">
+            <label for="usernmormail">Username or Email:</label>
+            <input type="text" id="usernmormail" name="usernmormail"  required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" required>
+        </div>
+        <label>
+            <input type="checkbox" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+        
+        
+        <div class="form-group">
+            <button type="log in" name="Log In" value="true" >Log In</button>
+        </div>
+        
+        
+    </form>
+
+    </div>
+
+    <a href="signup.html" style="font-size: 12px;">Not a member?</a>
+    </div>
+
+    <div class="footerlast">&copy;2024 September Café. All Rights Reserved.</div>
+    
+<script  src="signuplogin.js"></script>
+<script src="cafe.js"></script>
+</body>
+</html>

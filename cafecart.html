@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="scake.css">
+        <link rel="stylesheet" href="drinkstyle.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="cafecart.css">
+        <title>Your Cart</title>
+        <link rel="icon" href="logo_september_cafe.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+
+
+    <body>
+
+        <header>
+            <nav id="nav-cell">
+                <a href="index.html"><div class="logo"></div></a>
+                <div class="navlinks">
+                    <a href="index.html">Home</a>
+                    <a href="abtus.html">About Us</a>
+                    <div class="dropdown">
+                        <a>Category</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item parent">
+                                <a href="cake.html">Cake</a>
+                                <div class="child">
+                                    <a href="cake.html">Slice Cake</a>
+                                    <a href="wholecake.html">Whole Cake</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item parent">
+                                <a href="cupcakes.html">Dessert</a>
+                                <div class="child">
+                                    <a href="cupcakes.html">Cupcake</a>
+                                    <a href="yoghurtbowl.html">Yoghurt Bowl</a>
+                                    <a href="mousse.html">Mousse</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item parent">
+                                <a href="tea.html">Drinks</a>
+                                <div class="child">
+                                    <a href="tea.html">Tea</a>
+                                    <a href="coffee.html">Coffee</a>
+                                    <a href="Beverages.html">Beverages</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="deliverypickup.html">Delivery & PickUp</a>
+                    <a href="review.html">Review</a>
+                    <div class="dropdown">
+                        <a href="signup.html"><img src="user.png" width="38"></a>
+                            <div class="dropdown-content">
+                                <a href="Signup.html">Sign up</a>
+                                <a href="Login.html">Log in</a>
+                            </div>
+                    </div>
+                    <a href="cafecart.html"><img src="trolly.png" width="45"></a>
+               
+                <a></a>
+                    
+                </div>
+            </nav>
+        </header>
+        <h1>Ordered items are as listed below:</h1><br>
+        <h2 class="containerh2">Sliced Cakes</h2>
+        <div class="product">
+            <img src="peach.jpg" alt="peach" class="product-pic">
+            <div class="product-details">
+                <h3 class="product-title">Peach Cake</h3>
+                <p class="product-desc">
+                    <ul>
+                        <li>No Toppings</li>
+                        <li>No Add-Ons</li>
+                        <li>Remarks: Extra cream on top</li>
+                    </ul>
+                </p>
+            </div>
+            
+            <div class="quantotal">
+                <div class="product-quantity">
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" id="quantity1" name="quantity" min="1" value="1" onchange="updatePricescake(1)">
+                </div>
+                <div class="product-price">
+                    <label for="price1">Price:</label>
+                    <span id="price1">RM18.00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="Pistachio Raspberry Butter Cake.jpg" alt="pisrasp" class="product-pic">
+            <div class="product-details">
+                <h3 class="product-title">Pistachio Raspberry Butter Cake</h3>
+                <p class="product-desc">
+                    <ul>
+                        <li>Toppings: Chocolate Chips</li>
+                        <li>Add-Ons: Pistachio sauce</li>
+                        <li>No remarks</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="quantotal">
+                <div class="product-quantity">
+                    <label for="quantity2">Quantity:</label>
+                    <input type="number" id="quantity2" name="quantity" min="1" value="1" onchange="updatePricescake(2)">
+                </div>
+                <div class="product-price">
+                    <label for="price2">Price:</label>
+                    <span id="price2">RM18.00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="Grapefruit Sesame Cake.jpg" alt="grapefruitssm" class="product-pic">
+            <div class="product-details">
+                <h3 class="product-title">Grapefruit Sesame Cake</h3>
+                <p class="product-desc">
+                   <ul>
+                    <li>No toppings</li>
+                    <li>Add-Ons: Grapefruit Marmalade</li>
+                    <li>No remarks</li>
+                   </ul>
+                </p>
+            </div>
+            <div class="quantotal">
+                <div class="product-quantity">
+                    <label for="quantity3">Quantity:</label>
+                    <input type="number" id="quantity3" name="quantity" min="1" value="1" onchange="updatePricescake(3)">
+                </div>
+                <div class="product-price">
+                    <label for="price3">Price:</label>
+                    <span id="price3">RM18.00</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="containerh2">Whole Cakes</h2>
+        <div class="product">
+            <img src="strawberrywc.jpg" alt="strawberrywc" class="product-pic">
+            <div class="product-details">
+                <h3 class="product-title">Strawberry Whole Cake</h3>
+                <p class="product-desc">
+                    <ul>
+                        <li>Toppings:
+                            <ul>
+                                <li>Colour sprinkles</li>
+                                <li>Biscoff bits</li>
+                            </ul>
+                        </li>
+                        <li>Add-Ons:
+                            <ul>
+                                <li>Strawberry Jam</li>
+                                <li>5 candles</li>
+                            </ul>
+                        </li>
+                        <li>No remarks</li>
+                    </ul>
+            </div>
+            <div class="quantotal">
+                <div class="product-quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" onchange="updatePricewcake()">
+                </div>
+                <div class="product-price">
+                    <label for="price">Price:</label>
+                    <span id="price">RM550.00</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="containerh2">Beverages</h2>
+        <div class="product">
+            <img src="Snowtop Strawberry Latte.jpeg" alt="snowtopstrawberry" class="product-pic">
+            <div class="product-details">
+                <h3 class="product-title">Snowtop Strawberry Latte</h3>
+                <p class="product-desc">
+                    <ul>
+                        <li>No Toppings</li>
+                        <li>No Add-Ons</li>
+                        <li>Remarks: Less ice</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="quantotal">
+                <div class="product-quantity">
+                    <label for="quantity4">Quantity:</label>
+                    <input type="number" id="quantity4" name="quantity" min="1" value="1" onchange="updatePricescake(4)">
+                </div>
+                <div class="product-price">
+                    <label for="price4">Price:</label>
+                    <span id="price4">RM18.00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="Honey Pomelo Jasmine Tea.jpeg" alt="hopojasmine" class="product-pic">
+            <div class="product-details">
+                <h3 class="product-title">Honey Pomelo Jasmine Tea</h3>
+                <p class="product-desc">
+                    <ul>
+                        <li>No Toppings</li>
+                        <li>Add-Ons: Lime Slices</li>
+                        <li>Remarks: Less sugar</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="quantotal">
+                <div class="product-quantity">
+                    <label for="quantity5">Quantity:</label>
+                    <input type="number" id="quantity5" name="quantity" min="1" value="1" onchange="updatePricescake(5)">
+                </div>
+                <div class="product-price">
+                    <label for="price5">Price:</label>
+                    <span id="price5">RM18.00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttoncontainer">
+            <div class="buttonbox">
+            <div class="total-section">
+                <div class="total-price" id="totalPrice">Total Price: RM640.00</div>
+                <input type="radio" id="delivery" name="mode" value="delivery">
+                <label for="delivery">Delivery</label>
+                <input type="radio" id="pickup" name="mode" value="pickup">
+                <label for="pickup">Pickup</label>
+                <br><br>
+                <form id="orderForm" action="delivery.html" method="get">
+                    <button type="button" class="confirm-button" onclick="submitForm()">Confirm Order</button>
+                </form>
+            </div>
+            </div>
+        </div>
+
+        <div class="section-divider"></div>
+        <footer class="footer">
+            <div id="footer-cell">
+                <div class="footer-container">
+                    <div class="footer-item" style="background-image: url('logo_september_cafe.png');"></div>
+                    <div class="footer-item">
+                        <p><b>Address:</b> &nbsp;Sunway University</p>
+                        <p><b>Email:</b></p>
+                        <ul>
+                            <li><a href="mailto:info@septembercafe.com">22087852@imail.sunway.edu.my</a></li>
+                            <li><a href="mailto:info@septembercafe.com">22078430@imail.sunway.edu.my</a></li>
+                            <li><a href="mailto:info@septembercafe.com">23099740@imail.sunway.edu.my</a></li>
+                            <li><a href="mailto:info@septembercafe.com">23093206@imail.sunway.edu.my</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item">
+                        <p><b>Quick Links</b></p>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="abtus.html">About Us</a></li>
+                            <li><a href="review.html">Review</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footerlast">&copy;2024 September Café. All Rights Reserved.</div> 
+        </footer>
+
+        <script src="cafecart.js">
+            
+        </script>
+        <script src="cafe.js"></script>
+    </body>
+</html>

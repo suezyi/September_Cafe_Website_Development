@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+
+body {
+    font-family: "Abel", sans-serif;
+    background-color: #fcf8dc;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: "Abel", sans-serif;
+    font-size: 19px;
+    margin: 0 0 10px 0;
+   
+    text-align: left;
+}
+.container {
+    margin-top: 200px;
+    padding-top: 200px;
+    display: flex;
+    max-width: 1200px; 
+    margin: 50px auto;
+    background-color: #f7f0bb;
+    padding-bottom: 50px;
+   
+    
+}
+
+.drink-image {
+    flex: 1;
+    padding: 20px;
+    align-self: flex-start;
+    
+}
+
+.drink-image img {
+    max-width: 60%; /* Ensure image is responsive */
+    height: auto;
+    border-radius: 2px;
+    object-fit: contain;
+}
+
+.drink-details {
+    flex: 1;
+    padding: 20px; 
+    background-color: #fcf8dc;
+}
+
+.drink-details h1 {
+    font-family: "Abel",sans-serif;
+    font-size: 40px;
+    color: #85733b;
+    text-align: left;
+    margin: 0 0 10px 0;
+    padding-top: 0;
+}
+
+
+.description {
+    font-size: 20px;
+    color: #85733b;
+    overflow: auto; /* when the desc is too long, cust can scroll to see*/
+    height: auto;
+    margin-bottom: 1px; 
+}
+
+.delivery {
+    font-size: 16px;
+    color: #85733b;
+    margin-top: 20px; 
+}
+
+.price {
+    font-size: 25px;
+    color: #85733b;
+    margin: 10px 0 10px 0; 
+}
+
+.temperature {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+.temperature p {
+    margin: 0 0 10px 0;
+    font-size: 19px;
+}
+
+.quantity {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.quantity button {
+    background-color: #fcf8dc;
+    color: #85733b;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.quantity input {
+    width: 50px;
+    background-color: #fcf8dc;
+    text-align: center;
+    border: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.buy-now {
+    font-family: "Abel",sans-serif;
+    font-size: 100px;
+    background-color: #e1bc8e;
+    color: white;
+
+}
+
+.add-to-cart {
+    font-family: "Abel",sans-serif;
+    font-size: 100px;
+    background-color: #e1bc8e;
+    color: white;
+
+}
+
+footer p{
+    color: #85733b;
+    font-size: 40%;
+    font-family: Times, 'Noto Serif JP', serif ;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+.text{
+            flex:1;
+            text-align:justify;
+            font-size: larger;
+        }
+
+        ul{
+            list-style-type:circle;
+        }
+
+        .section-divider {
+            margin-top:20px;
+            margin-bottom:20px;
+            border-top: 1px solid #85733b;
+        }
+
+        .container{
+            display:flex;
+            flex-direction:column;
+            margin-right:50px;
+            margin-left:20px;
+            padding: 50px;
+            justify-content:center;/*Center items horiontally*/
+            align-items:center;/*Center items vertically*/
+        }

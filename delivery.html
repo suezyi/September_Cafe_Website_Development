@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="drinkstyle.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="delivery.css">
+        <title>Delivery Details</title>
+        <link rel="icon" href="logo_september_cafe.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+
+    </head>
+
+    <body>
+        <header>
+            <nav id="nav-cell">
+                <a href="index.html"><div class="logo"></div></a>
+                <div class="navlinks">
+                    <a href="index.html">Home</a>
+                    <a href="abtus.html">About Us</a>
+                    <div class="dropdown">
+                        <a>Category</a>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item parent">
+                                <a href="cake.html">Cake</a>
+                                <div class="child">
+                                    <a href="cake.html">Slice Cake</a>
+                                    <a href="wholecake.html">Whole Cake</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item parent">
+                                <a href="cupcakes.html">Dessert</a>
+                                <div class="child">
+                                    <a href="cupcakes.html">Cupcake</a>
+                                    <a href="yoghurtbowl.html">Yoghurt Bowl</a>
+                                    <a href="mousse.html">Mousse</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-item parent">
+                                <a href="tea.html">Drinks</a>
+                                <div class="child">
+                                    <a href="tea.html">Tea</a>
+                                    <a href="coffee.html">Coffee</a>
+                                    <a href="Beverages.html">Beverages</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="deliverypickup.html">Delivery & PickUp</a>
+                    <a href="review.html">Review</a>
+                    <div class="dropdown">
+                        <a href="signup.html"><img src="user.png" width="38"></a>
+                            <div class="dropdown-content">
+                                <a href="Signup.html">Sign up</a>
+                                <a href="Login.html">Log in</a>
+                            </div>
+                    </div>
+                    <a href="cafecart.html"><img src="trolly.png" width="45"></a>
+               
+                <a></a>
+                    
+                </div>
+            </nav>
+        </header>
+            <br><br><br><br>
+        <div class="form-container" id="formContainer">
+            <form id="dForm" onsubmit="return submitform()">
+                <h2 style="text-align:center">Delivery Details</h2>
+                <div class="form-group">
+                    <label for="name">First Name:</label>
+                    <input type="text"id="fname" name="fname"required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="name">Last Name:</label>
+                    <input type="text"id="lname" name="lname"required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+        
+                <div class="form-group">
+                    <label for="town">Town/City:</label>
+                    <textarea id="town" name="town" rows="2" required></textarea>
+                </div>
+        
+                
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <select id="state" name="state" required>
+                        <option value="">Select..</option>
+                        <option value="1">Johor</option>
+                        <option value="2">Kedah</option>
+                        <option value="3">Kelantan</option>
+                        <option value="4">Labuan</option>
+                        <option value="5">Malacca(Melaka)</option>
+                        <option value="6">Negeri Sembilan</option>
+                        <option value="7">Pahang</option>
+                        <option value="8">Penang(Pulau Pinang)</option>
+                        <option value="9">Perak</option>
+                        <option value="10">Perlis</option>
+                        <option value="11">Sabah</option>
+                        <option value="12">Sarawak</option>
+                        <option value="13">Selangor</option>
+                        <option value="14">Terengganu</option>
+                        <option value="15">Putrajaya</option>
+                        <option value="16">Kuala Lumpur</option>
+                    </select>
+               </div>
+        
+                <div class="form-group">
+                    <label for="postcode">Postcode:</label>
+                    <input type="postcode" id="postcode" name="postcode" required pattern="\d{5}">
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="phone" id="phone" name="phone" required pattern="\d{10}">
+                </div>
+        
+               <div class="form-group">
+                <button type="submit" name="submitted" value="true" onclick="submitForm()">Submit</button>
+               </div>
+            </form>
+        
+            
+            
+        </div>
+        <br>
+        <div class="footerlast">&copy;2024 September Café. All Rights Reserved.</div> 
+        <script src="delivery.js"> 
+            
+        </script>
+        <script src="cafe.js"></script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sign Up</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="signuploginstyle.css">
+<link rel="icon" href="logo_september_cafe.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header style="padding-bottom: 10px;">
+       
+            <a href="index.html"><img src="logo_september_cafe.png" height="140" alt="cafe_logo"></a>
+
+    </header>
+    <div>
+    <div class="form-container" id="formContainer">
+    <h1>Sign Up</h1>
+    <form id="signUpForm" method="get" onsubmit="return showSignupMessage()">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="copassword">Confirm Password:</label>
+            <input type="text" id="copassword" name="copassword" required>
+        </div>
+        <div class="form-group">
+            <button type="sign up" name="sign up" value="true" >Sign up</button>
+        </div>
+    </form>
+    </div>
+
+    <a href="login.html" style="font-size: 12px;">Already a member?</a>
+    
+    </div>
+
+    <div class="footerlast">&copy;2024 September Café. All Rights Reserved.</div>
+
+
+<script  src="signuplogin.js"></script>
+<script src="cafe.js"></script>
+</body>
+</html>

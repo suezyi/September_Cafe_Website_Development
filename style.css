@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    margin: 0px;
+    padding-top: 110px;
+    font-family: "Playfair Display", serif;
+    background-color: #f7f0bb;
+    color: #85733b;
+}
+
+h1{
+    padding-top: 10px;
+    color: #85733b;
+}
+
+h4,h5{
+    color: #85733b;
+}
+
+#nav-cell{
+    height: auto;
+    background-color: #fcf8dc;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-family: "Playfair Display", serif;
+    font-size: large;
+    font-weight:bold;
+    font-style: normal;
+    align-items: center;
+    display: flex;  /*Align the elements in correct destination*/
+    justify-content: space-between;
+    z-index: 1;  /*Avoid overlapping on the dropdown menu*/
+}
+
+.navlinks {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: #85733b;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    background-image: url("logo_september_cafe.png");
+    width: 280px;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo.a{
+    width: 280px;
+    height: 160px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;  /*Hidden the dropdown menu*/
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 120px;
+    z-index: 1;  /*Avoid overlapping with other contents*/
+}
+
+.dropdown-content a {
+    color: #85733b;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content .dropdown-item{
+    position: relative;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1  /*Appear white when hover to it*/
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;  /*Display the dropdown menu for user*/
+}
+
+/*Sub-dropdown menu part*/
+.child{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    left: 100%;
+    top: 0;
+}
+
+.parent:hover .child{
+    display: block;  /*Display the dropdown menu for user*/
+}
+
+.image-container {
+    width: 100%;
+    height: calc(100vh - 50px); /*Use the full screen height and height of navcell*/ 
+    position: relative;
+    background-repeat: no-repeat; 
+}
+
+.image{
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: image 8s infinite;
+}
+
+.image.image1{
+    background-image: url("picture1.jpg");
+    animation-delay: 0s;
+}
+
+.image.image2{
+    background-image: url("picture2.jpg");
+    animation-delay: 2s;
+}
+
+.image.image3{
+    background-image: url("picture3.jpg");
+    animation-delay: 4s;
+}
+
+.image.image4{
+    background-image: url("picture4.jpg");
+    animation-delay: 6s;
+}
+@keyframes image {
+    0%{opacity: 0;}
+    8%{opacity: 1;}
+    25%{opacity: 1;}
+    34%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+.content-container{
+    position: absolute;
+    border-radius: 12px;
+    background-color: #fcf8ccb4;
+    width: 80%;
+    max-width: 310px;
+    height: auto;
+    min-height: 280px;
+    top: 20%;
+    left: 10%;
+    padding: 5%;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#content-cell{
+    background-color: #fcf8dc;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.flexbox-container{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#footer-cell{
+    background-color: #f7f0bb;;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container{
+    display: flex;
+    gap: 120px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-item{
+    flex: 1 1 200px; /* Allow items to grow and shrink equally, with a base size of 300px */
+    height: 200px;
+    padding: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item:nth-child(2){
+    padding: 5px;
+    text-align: left;
+}
+
+.footer-item:nth-child(3){
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-item:nth-child(3) a{
+    text-decoration: underline;
+}
+
+.footer-item a{
+    text-decoration: none;
+    color: #85733b;
+    text-align: left;
+}
+
+.footer-item p{
+    margin-bottom: 5px;
+    color: #85733b;
+    font-family: "Playfair Display", serif;
+    font-size: medium;
+    text-align: left;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer{
+    background-color: #f7f0bb;;
+    text-align: center;
+}
+
+.footerlast{
+    color: #85733b;
+    font-size: 10px;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+}
+
+.section-divider {
+    margin-top:50px;
+    margin-bottom:50px;
+    border-top: 1px solid #85733b;
+}
+
+@media (max-width: 768px) {
+    #nav-cell {
+        flex-direction: row; 
+        align-items: center;
+        padding: 10px;
+        flex-wrap: wrap; 
+    }
+
+    .navlinks {
+        flex-direction: row; 
+        gap: 10px;
+        width: 100%;
+        justify-content: space-between; 
+        flex-wrap: wrap; 
+    }
+
+    .navlinks a {
+        text-align: left;
+        padding: 10px 0;
+        flex: 1 1 auto; 
+    }
+
+    .logo {
+        width: 200px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    #nav-cell {
+        flex-direction: row; 
+        align-items: center;
+        flex-wrap: wrap; 
+    }
+
+    .navlinks {
+        flex-direction: row; 
+        gap: 5px;
+        width: 100%;
+        justify-content: space-between; 
+        flex-wrap: wrap; 
+    }
+
+    .navlinks a {
+        padding: 10px 20px;
+        text-align: left;
+        flex: 1 1 auto; 
+    }
+}
